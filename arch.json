@@ -29,14 +29,6 @@
         "buffers_per_ctrl_vc": 16,
         "chiplet_sim": 0
     },
-    "applictaion": {
-        "maxtime": 360,
-        "max-ticks": 30000000000,
-        "threads": 15,
-        "link_latency": 2,
-        "cmd": "/data/sxchen/workspace/Arch/Benchmarks/NPB-CPP/NPB-OMP/bin/ep.S",
-        "options": " "
-    },
     "chiplet": {
         "tech": "tech_1"
     }

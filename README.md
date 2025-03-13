@@ -66,6 +66,7 @@ make sure your path in the sim-config.json is correct
     python sim.py -c sim-config.json
 
 The evalaution results of simulation will stored in report.csv file
+    
     path,sim_ticks,sim_insts,a_lat,max_lat,area,peak_power,total_chiplet_area,total_interposer_area,total_cost,chip_total_cost,max_thermal,avg_thermal
     stats.txt,1159261000,3877396,118450.4,118468,350.918,254.456,348.319233,442.703835,10.740,6.221,45.700000000000045,45.504780273437525
 

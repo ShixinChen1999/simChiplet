@@ -5,7 +5,7 @@ ____
 ## Building Toolchains
 
 ### Construct the Environment
-Create new conda enviroment to make the installation successfully.
+To ensure a successful installation, create a new conda environment:
 
     conda create -n simChiplet python=3.8
     conda activate simChiplet
@@ -16,29 +16,31 @@ Create new conda enviroment to make the installation successfully.
 
 
 ### Install GEM5 that support RISCV and X86      
-Install Gem5 in the root path of the repo
+Install GEM5 in the root path of the repository:
 
     git clone https://gem5.googlesource.com/public/gem5
     git tag
     git checkout v22.1.0.0
-    #X86 ISA is more stable
+
+X86 ISA is more stable
+    
     scons build/X86/gem5.opt PROTOCOL=MESI_Two_Level -j`nproc`
     scons build/RISCV/gem5.opt PROTOCOL=MESI_Two_Level -j`nproc`
     
 
 
 ### Install RISCV compilation toolchain (Only for RISCV support)
-    git --recursive clone  https://github.com/riscv/riscv-gnu-toolchain #may take a long time
+    git --recursive clone  https://github.com/riscv/riscv-gnu-toolchain # This may take a long time
     cd riscv-gnu-toolchain
     mkdir build
     cd build
-    ../configure --prefix=/path/to/install # change the path to install
-    make linux -j`nproc` && make install # wait to install submodule and compilation
+    ../configure --prefix=/path/to/install  # Change the path to your preferred installation location
+    make linux -j`nproc` && make install  # Wait for submodule installation and compilation
 
 
-### Complie the workloads:
+## Complie the workloads:
 
-## For matrix multiplication test
+### For matrix multiplication test
     cd workload
 
 change the RISCV-Toolchain path in Makefile 
@@ -48,7 +50,7 @@ make:
 
     mkdir matmul
     make x86 -j4
-## For NPB benchmark
+### For NPB benchmark
     cd workload/NPB-OMP
     make [APP] CLASS=[OPTIONS]
 
@@ -59,13 +61,13 @@ _____
 ## Run the Simulation
 
 ### Specify the simulation:
-change the archietcture parameetr in arch.json
-    
-make sure your path in the sim-config.json is correct
+Change the architecture parameters in `arch.json`, making sure that the paths specified in `sim-config.json` are correct.
+
+Run the simulation with:
 
     python sim.py -c sim-config.json
 
-The evalaution results of simulation will stored in report.csv file
+The evaluation results of the simulation will be stored in the `report.csv` file:
     
     path,sim_ticks,sim_insts,a_lat,max_lat,area,peak_power,total_chiplet_area,total_interposer_area,total_cost,chip_total_cost,max_thermal,avg_thermal
     stats.txt,1159261000,3877396,118450.4,118468,350.918,254.456,348.319233,442.703835,10.740,6.221,45.700000000000045,45.504780273437525

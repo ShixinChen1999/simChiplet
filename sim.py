@@ -344,12 +344,12 @@ def split_gird_staedy(grid_steady_file,num_layers,num_rows,num_cols):
             ofp.write(f"{line[0]}    {round(float(line[1]), 2)}\n")
 
 def grid_thermal_map(flp_filename,temperatures_filename,rows,cols,output_filename):
-  # 添加字体路径
+  
     import matplotlib.font_manager as fm
-    font_path = '/data/sxchen/workspace/Arch/gem5/ChipletSim/third-party/Times New Roman.ttf'  # 替换为实际路径
+    font_path = './templata/Times New Roman.ttf'  # 替换为实际路径
     fm.fontManager.addfont(font_path)
 
-    # 设置字体
+    
     plt.rcParams['font.family'] = 'Times New Roman'
 
     fig, axs = plt.subplots(1)
@@ -382,22 +382,13 @@ def grid_thermal_map(flp_filename,temperatures_filename,rows,cols,output_filenam
                 temps.append(float(line.strip().split()[1])-273.15)
 
         temps = np.reshape(temps, (rows, cols))
-            # 创建绿色到红色的颜色映射
-        colors = ["green", "yellow", "red"]  # 从绿色到红色
+            
+        colors = ["green", "yellow", "red"]  
         cmap = LinearSegmentedColormap.from_list("custom_cmap", colors, N=256)
 
-        # 绘制热图
+  
         im = axs.imshow(temps, cmap=cmap, extent=(0, total_width, 0, total_length), vmin=89.5, vmax=93)
 
-        
-
-        #im = axs.imshow(temps, cmap='hot_r', extent=(0, total_width, 0, total_length))
-
-
-        # if min_temp is None and max_temp is None:
-        #   im.set_clim(np.min(temps), np.max(temps))
-        # else:
-        #   im.set_clim(min_temp, max_temp)
 
         cbar = fig.colorbar(im, ax=axs)
 
@@ -551,8 +542,8 @@ if __name__ == "__main__":
         configs = json.load(model_f)
 
     report_dir =  configs["report"]["path"]
-    # run_gem5(configs)
-    # run_mcpat(configs,report_dir)
-    # run_hotspot(configs,report_dir)
+    run_gem5(configs)
+    run_mcpat(configs,report_dir)
+    run_hotspot(configs,report_dir)
     run_cost(configs,report_dir)
     report_csv(report_dir)

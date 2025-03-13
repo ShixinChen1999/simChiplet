@@ -3,8 +3,8 @@
     "path": "arch.json"
   },
   "simulator": {
-    "gem5-root": "/data/sxchen/workspace/Arch/gem5/build/",
-    "se-path": "/data/sxchen/workspace/Arch/gem5/configs/example/se.py",
+    "gem5-root": "gem5/build/",
+    "se-path": "gem5/configs/example/se.py",
     "ISA": "X86",
     "maxtime": 360,
     "max-ticks": 30000000,

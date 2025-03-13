@@ -1,0 +1,262 @@
+{
+    "tech_1": {
+        "wafer_radius": 101.6,
+        "wafer_cost": 500,
+        "defect_density": 0.005
+    },
+    "tech_2": {
+        "wafer_radius": 101.6,
+        "wafer_cost": 750,
+        "defect_density": 0.01
+    },
+    "tech_3": {
+        "wafer_radius": 250,
+        "wafer_cost": 1100,
+        "defect_density": 0.0005
+    },
+    "packaging_yield": 0.9,
+    "has_interposer": true,
+    "interposer_technology": "tech_3",
+    "chiplets": {
+        "Core_0": {
+            "dimensions": {
+                "x": 4.7010000000000005,
+                "y": 4.039
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "Core_5": {
+            "dimensions": {
+                "x": 4.7410000000000005,
+                "y": 4.005
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 4.7010000000000005,
+                "y": 0.0
+            }
+        },
+        "Core_1": {
+            "dimensions": {
+                "x": 4.037,
+                "y": 4.704
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 9.442,
+                "y": 0.0
+            }
+        },
+        "Core_2": {
+            "dimensions": {
+                "x": 3.9890000000000003,
+                "y": 4.760000000000001
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 13.478,
+                "y": 0.0
+            }
+        },
+        "Core_3": {
+            "dimensions": {
+                "x": 4.159999999999999,
+                "y": 4.5649999999999995
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 0.0,
+                "y": 4.760000000000001
+            }
+        },
+        "Core_4": {
+            "dimensions": {
+                "x": 3.948,
+                "y": 4.809
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 4.159999999999999,
+                "y": 4.760000000000001
+            }
+        },
+        "Core_6": {
+            "dimensions": {
+                "x": 3.925,
+                "y": 4.838
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 8.108,
+                "y": 4.760000000000001
+            }
+        },
+        "Core_7": {
+            "dimensions": {
+                "x": 4.4079999999999995,
+                "y": 4.308
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 12.033,
+                "y": 4.760000000000001
+            }
+        },
+        "Core_8": {
+            "dimensions": {
+                "x": 4.475,
+                "y": 4.243
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 0.0,
+                "y": 9.597
+            }
+        },
+        "Core_9": {
+            "dimensions": {
+                "x": 4.022,
+                "y": 4.721
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 4.475,
+                "y": 9.597
+            }
+        },
+        "Core_10": {
+            "dimensions": {
+                "x": 4.005,
+                "y": 4.7410000000000005
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 8.497,
+                "y": 9.597
+            }
+        },
+        "Core_11": {
+            "dimensions": {
+                "x": 3.993,
+                "y": 4.755
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 12.501999999999999,
+                "y": 9.597
+            }
+        },
+        "Core_12": {
+            "dimensions": {
+                "x": 4.21,
+                "y": 4.51
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 0.0,
+                "y": 14.353
+            }
+        },
+        "Core_13": {
+            "dimensions": {
+                "x": 4.168,
+                "y": 4.556
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 4.21,
+                "y": 14.353
+            }
+        },
+        "Core_14": {
+            "dimensions": {
+                "x": 4.116,
+                "y": 4.6129999999999995
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 8.378,
+                "y": 14.353
+            }
+        },
+        "Core_15": {
+            "dimensions": {
+                "x": 3.995,
+                "y": 4.753
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 12.494,
+                "y": 14.353
+            }
+        },
+        "L2_0": {
+            "dimensions": {
+                "x": 3.104,
+                "y": 3.585
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 16.489,
+                "y": 14.353
+            }
+        },
+        "L2_1": {
+            "dimensions": {
+                "x": 3.366,
+                "y": 3.306
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 0.0,
+                "y": 19.106
+            }
+        },
+        "L2_2": {
+            "dimensions": {
+                "x": 3.2680000000000002,
+                "y": 3.4050000000000002
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 3.366,
+                "y": 19.106
+            }
+        },
+        "L2_3": {
+            "dimensions": {
+                "x": 3.189,
+                "y": 3.489
+            },
+            "technology": "tech_1",
+            "rotation": 0,
+            "position": {
+                "x": 6.635000000000001,
+                "y": 19.106
+            }
+        }
+    }
+}

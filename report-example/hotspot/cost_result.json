@@ -1,0 +1,136 @@
+{
+    "chip_width": 19.593,
+    "chip_height": 22.595000000000002,
+    "total_chiplet_area": 348.319233,
+    "total_interposer_area": 442.703835,
+    "total_cost": "10.740",
+    "chip_total_cost": "6.221",
+    "interposer": {
+        "cost": 3.4448387416666666,
+        "dies_per_wafer": "390.00",
+        "manufacturing_yield": "0.82",
+        "known_good_dies": "319.32"
+    },
+    "chiplets": {
+        "Core_0": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.34131443110972565
+        },
+        "Core_5": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.34131500155860356
+        },
+        "Core_1": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.91",
+            "cost": 0.34131865336658357
+        },
+        "Core_2": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.34131490024937655
+        },
+        "Core_3": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.90",
+            "cost": 0.3413192019950124
+        },
+        "Core_4": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.93",
+            "cost": 0.3413122381546135
+        },
+        "Core_6": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.91",
+            "cost": 0.3413172537406483
+        },
+        "Core_7": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.91",
+            "cost": 0.34131805486284295
+        },
+        "Core_8": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.34131456514962594
+        },
+        "Core_9": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.3413152462593516
+        },
+        "Core_10": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.34131500155860356
+        },
+        "Core_11": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.93",
+            "cost": 0.34131345854114714
+        },
+        "Core_12": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.93",
+            "cost": 0.34131405860349134
+        },
+        "Core_13": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.91",
+            "cost": 0.3413176558603492
+        },
+        "Core_14": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.93",
+            "cost": 0.3413140710723192
+        },
+        "Core_15": {
+            "dies_per_wafer": "1604.00",
+            "manufacturing_yield": "0.91",
+            "known_good_dies": "1464.92",
+            "cost": 0.34131582761845386
+        },
+        "L2_0": {
+            "dies_per_wafer": "2778.00",
+            "manufacturing_yield": "0.95",
+            "known_good_dies": "2631.58",
+            "cost": 0.1899998560115191
+        },
+        "L2_1": {
+            "dies_per_wafer": "2778.00",
+            "manufacturing_yield": "0.95",
+            "known_good_dies": "2631.58",
+            "cost": 0.18999999640028797
+        },
+        "L2_2": {
+            "dies_per_wafer": "2779.00",
+            "manufacturing_yield": "0.95",
+            "known_good_dies": "2632.53",
+            "cost": 0.1899312162648435
+        },
+        "L2_3": {
+            "dies_per_wafer": "2779.00",
+            "manufacturing_yield": "0.95",
+            "known_good_dies": "2632.55",
+            "cost": 0.18993020960777257
+        }
+    }
+}

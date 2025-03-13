@@ -1,0 +1,48 @@
+{
+	"processor":{
+        "ISA" : "X86",
+        "cpu_type" : "O3CPU",
+        "num_cpus" : 16,
+        "l1d_size" : ["16kB","32kB","64kB","128kB"],
+        "l1i_size" : ["16kB","32kB","64kB","128kB"],
+        "l1d_assoc": [2,4,8,16],
+        "l2_size"  : ["32kB","64kB","128kB","256kB"],
+        "l2_assoc" : [4,8,16,32],
+        "num_l2cache": [4,8,16,32],
+        "cacheline_size":[64,128,256],
+        "num_dirs" : [4,8,16,32]
+        
+    },
+    "memory":{
+        "mem-type" : "DDR4_2400_16x4",
+        "mem-size" : "4096MB",
+        "mem-channels": [4,8,16,32],
+        "mem-ranks": [4,8,16,32]        
+    },
+    "topology":{
+        "topo" : "Pt2Pt",
+        "mesh_rows": 4,
+        "number_of_virtual_networks":[8,16,32,64],
+        "control_msg_size":[8,16,32,64],
+        "ni_flit_size":[8,16,32,64],
+        "vcs_per_vnet": [2,4,8,16],
+        "buffers_per_data_vc":[2,4,8,16],
+        "buffers_per_ctrl_vc":[2,4,8,16],
+        "chiplet_sim":0
+    },
+    
+    "applictaion":{
+        "maxtime": 360,
+        "max-ticks": 30000000000,
+        "threads": 15,
+        "link_latency": 2,
+	    "cmd" : "/data/sxchen/workspace/Arch/Benchmarks/NPB-CPP/NPB-OMP/bin/ep.S",
+        "options": " "
+    },
+   
+    "chiplet":{
+        "tech": "tech_1"
+    }
+   
+  
+}

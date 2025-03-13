@@ -1,0 +1,64 @@
+{
+  "design_spec": {
+    "path": "arch.json"
+  },
+  "simulator": {
+    "gem5-root": "/data/sxchen/workspace/Arch/gem5/build/",
+    "se-path": "/data/sxchen/workspace/Arch/gem5/configs/example/se.py",
+    "ISA": "X86",
+    "maxtime": 360,
+    "max-ticks": 30000000,
+    "link-latency": 2,
+    "app": "workload"
+  },
+ 
+  "benchmark": {
+    "spec2006": {
+      "root_path": null,
+      "candidate": null,
+      "options": null
+    },
+    "npb": {
+      "root_path": null,
+      "candidate": null,
+      "options": null
+    },
+    "splash-2": {
+      "root_path": null,
+      "candidate": null,
+      "options": null
+    },
+    "bare-model": {
+      "root_path": null,
+      "candidate": null,
+      "options": null
+    },
+    "workload": {
+      "root_path": "workload",
+      "candidate": "matmul/tiled_matmul_cpu_128-paralell.x86",
+      "options": 15
+    }
+  },
+  "mcpat": {
+    "path": "third-party/mcpat",
+    "template": "template/template_my.xml"
+  },
+  "floorplan": {
+    "path": "third-party/floorplan"
+  },
+  "hotspot": {
+    "path": "third-party/hotspot",
+    "template": "template/example.config",
+    "materials": "template/example.materials",
+    "num_layers": 4,
+    "num_rows": 64,
+    "num_cols": 64
+  },
+  "cost": {
+    "template": "template/cost.json",
+    "technology": "tech_1"
+  },
+  "report": {
+    "path": "./report-example"
+  }
+}

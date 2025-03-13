@@ -1,0 +1,11 @@
+If you want to run differnet workloads (e.g. matrix multiplication with differnet dimentions), 
+
+For example: 512x512x512 
+1. cp src/tiled_matmul_cpu-paralell.c src/tiled_matmul_cpu-paralell-512.c
+2. open file "src/tiled_matmul_cpu-paralell-512.c" and change the line in Line5:
+    #define DIM 512
+    
+3. open file Makefile, add line: 
+   gcc  src/tiled_matmul_cpu-paralell-512.c -g -o bin/tiled_matmul_cpu_512-paralell.x86 -static -lm -lpthread -fPIC
+4. run:
+    make 

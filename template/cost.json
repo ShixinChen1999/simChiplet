@@ -1,0 +1,49 @@
+{
+	"chiplets": {
+		"Chiplet1" : {
+			"dimensions" : {"x" : 5,"y" : 5},
+			"technology" : "tech_1",
+			"rotation" : 0, 
+			"position": {"x" : 10, "y" : 7}
+		},
+		"Chiplet2" : {
+			"dimensions" : {"x" : 5,"y" : 5},
+			"technology" : "tech_1",
+			"rotation" : 0, 
+			"position" : {"x" : 10, "y" : 12}
+		},
+		"Chiplet3" : {
+			"dimensions" : {"x" : 10,"y" : 10},
+			"technology" : "tech_1",
+			"rotation" : 0, 
+			"position": {"x" : 12, "y" : 9}
+		},
+		"Chiplet4" : {
+			"dimensions" : {"x" : 8,"y" : 8},
+			"technology" : "tech_1",
+			"rotation" : 0, 
+			"position" : {"x" : 15, "y" : 15}
+		}
+	},
+	"tech_1" : {
+		"wafer_radius" : 101.6,
+		"wafer_cost" : 500,
+		"defect_density" : 0.005
+	},
+	"tech_2" : {
+		"wafer_radius" : 101.6,
+		"wafer_cost" : 750,
+		"defect_density" : 0.01
+	},
+	"tech_3" : {
+		"wafer_radius" : 250,
+		"wafer_cost" : 1100,
+		"defect_density" : 0.0005
+	},
+	
+	"packaging_yield" : 0.9,
+	"has_interposer" : true,
+	"interposer_technology" : "tech_3"
+}
+
+

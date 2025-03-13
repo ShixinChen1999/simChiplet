@@ -44,8 +44,9 @@ X86 ISA is more stable
     cd workload
 
 change the RISCV-Toolchain path in Makefile 
-    # in Makefile Need specify in your environment
+    
     RISCV_GCC_COMPILER=RISCV-Toolchain/bin/riscv64-unknown-linux-gnu-gcc 
+
 make:
 
     mkdir matmul

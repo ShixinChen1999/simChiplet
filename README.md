@@ -1,23 +1,23 @@
-# ChipletSim: A Simulation and Exploration Framework for Chiplet-based Architecture
+# ChipletSim: A Simulation Framework for Chiplet-based Architecture
 
 ____
 
 ## Building Toolchains
 
-
-
-
 ### Construct the Environment
 Create new conda enviroment to make the installation successfully.
 
-    conda create -n gem5 python=3.8
-    conda activate gem5
+    conda create -n simChiplet python=3.8
+    conda activate simChiplet
     conda install scons
 
 **Note**: using `pip` to install `scons` may cause complilation bug :report no python installation
 
 
+
 ### Install GEM5 that support RISCV and X86      
+Install Gem5 in the root path of the repo
+
     git clone https://gem5.googlesource.com/public/gem5
     git tag
     git checkout v22.1.0.0
